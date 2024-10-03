@@ -1,6 +1,5 @@
 package com.curso.resources;
 
-
 import com.curso.domains.dtos.ProdutoDTO;
 import com.curso.services.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,12 +14,11 @@ import java.util.List;
 @RequestMapping(value = "/produto")
 public class ProdutoResources {
 
-
         @Autowired
         private ProdutoService produtoService;
 
         @GetMapping
         public ResponseEntity<List<ProdutoDTO>> findAll(){
-            return ResponseEntity.ok().body(produtoService.findAll());
+                return ResponseEntity.ok().body(produtoService.findAll());
         }
 }

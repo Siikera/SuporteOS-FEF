@@ -19,7 +19,6 @@ public class GrupoProdutoResources {
 
     @GetMapping
     public ResponseEntity<List<GrupoProdutoDTO>> findAll(){
-        return ResponseEntity.ok().body(grupoProdutoService.findAll());
+        return ResponseEntity.ok(grupoProdutoService.findAll());
     }
-
 }

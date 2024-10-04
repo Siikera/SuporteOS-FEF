@@ -16,5 +16,4 @@ public class SuporteosApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SuporteosApplication.class, args);
 	}
-
 }
